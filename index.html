@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="icon" type="image/x-icon" href="images/favIcon.jpg">
+    <link rel="stylesheet" href="expense.css">
+</head>
+
+<body>
+    <!-- First container -->
+    <div class="container-1">
+        <div class="row-1">
+            <div class="expense">
+                <h4>EXPENCE</h4>
+                <h2 id="money-minus" class="money-minus">0</h2>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="income">
+                <h4>INCOME</h4>
+                <h2 id="money-plus" class="money-plus">0</h2>
+            </div>
+            <div class="balance">
+                <h4>BALANCE</h4>
+                <h2 id="balance">
+            </div>
+        </div>
+    </div>
+
+     <!--Second container  -->
+    <div class="container-2">
+        <div class="title">
+            <h3>+Add New transaction</h3>
+        </div>
+        <form id="form">
+            <div class="add-transaction">
+                <div class="exp-type">
+                    <input type="text" id="text" placeholder="Enter expense type...">
+                </div>
+                <div class="exp-amt">
+                    <input type="number" id="amount" placeholder="Enter amount...">
+                </div>
+                <div class="transation-Btn"><button class="btn">+Add</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="history-title">
+            <h3 class="transaction-title">Transaction List &#8595;</h3>
+        </div>
+        
+        <div class="display">
+            <ul id="list" class="list"></ul>
+        </div>
+    </div>
+
+<script src="expense.js"></script>
+</body>
+
+</html>
